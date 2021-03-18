@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+}
+.titre{
+	font-family: 'Righteous', cursive;
+	font-size:100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        flex-wrap:wrap;
+}
+.titre2{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.menu_d{
+	font-size:20px;
+}
+.menu_deroulant{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.po{
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: #06488e;
+        font-size: 50px;
+        margin: 10px;
+        position: relative;
+}
+.po2{
+        color: black;
+        font-size: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+}
+.article{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        flex-direction: column;
+}
+#anim{
+	position: relative;
+	width: 500px;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+        flex-direction: column;
+}
+#jpo{
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        flex-direction: column;
+}
+.gc{
+        background-color:  #005194;
+        position: absolute;
+        border-radius: 50%;
+        width:250px;
+        height:250px;
+        display: flex;
+        animation-name: anim_gc;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.pc{
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        background-color: white;
+        animation-name: anim_pc;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.vague{
+    position: absolute;
+    display: flex;
+    width:420px;
+    top: 55px;
+}
+.cache{
+    position:absolute;
+    background-attachment: fixed;
+    display: flex; 
+    top:0px;
+    width: 500px;
+    height: 500px;
+    margin-left: 0px;
+    background-color: white;
+    animation-name: anim_vague;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.fb{
+    position: absolute;
+    display: flex;
+    width:300px;
+    top: 273px;
+    filter: opacity(0);
+    animation-name: anim_bat;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.fh{
+    position: absolute; 
+    display: flex;
+    filter: opacity(0);
+    width:300px;
+    animation-name: anim_bat;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#c{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height:300px;
+    justify-content:center;
+    align-items:center;
+}
+#bat{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content:center;
+}
+#slogan{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    z-index: 2;
+}
+p{
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+#pf{
+    position: absolute;
+    display: flex;
+    margin-left: 390px;
+    margin-top: 80px;
+}
+#qui{
+    font-size: 200px;
+}
+
+
+@keyframes anim_gc{
+    0%{
+        width:0px;
+        height:0px;
+    }
+    20%{
+        width:270px;
+        height:270px;
+    }
+    25%{
+        width:220px;
+        height:220px;
+    }
+    30%{
+        width:260px;
+        height:260px;
+    }
+    40%{
+        width:250px;
+        height:250px;
+    }
+    
+    100%{
+        width:250px;
+        height:250px;
+    }
+}
+@keyframes anim_pc{
+    5%{
+        width:0px;
+        height:0px;
+    }
+    20%{
+        width:250px;
+        height:250px;
+    }
+    30%{
+        width:50px;
+        height:50px;
+    }
+    35%{
+        width:120px;
+        height:120px;
+    }
+    40%{
+        width:100px;
+        height:100px;
+    }
+    100%{
+        width:100px;
+        height:100px;
+    }
+}
+@keyframes anim_vague{
+    0%{
+        width:500px;
+        height:500px;
+        top:0px;
+        transform:rotate(0deg);
+        
+    }
+    5%{
+        top:0px;
+        margin-left: 0px;
+    }
+    20%{
+        transform:rotate(-75deg);
+        
+    }
+    22%{
+        top:190px;
+    }
+    25%{
+        height:380px;
+        top:190px;
+    }
+    27%{
+        margin-left:300px;
+    }
+    35%{
+        height:0px;
+        top:500px;
+        transform:rotate(0deg);
+        width:220px;
+    }
+    70%{
+        height:0px;
+        top:500px;
+        transform:rotate(0deg);
+        width:220px;
+    }
+    74%{
+        margin-left:300px;
+    }
+    
+    75%{
+        height:380px;
+        top:190px;
+    }
+    76%{
+        top:190px;
+    }
+    77%{
+        transform:rotate(-75deg);
+    }
+    85%{
+        top:0px;
+        margin-left: 0px;
+    }
+        
+    87%{
+        width:500px;
+        height:500px;
+        top:0px;
+        transform:rotate(0deg);
+    }
+}
+@keyframes anim_bat{
+    0%{
+        filter: opacity(0);
+    }
+    60%{
+        filter: opacity(0);
+    }
+    90%{
+        filter: opacity(1);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+
+#bande{
+    
+    margin-top: 350px;
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+   margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    padding: 5px 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: white;
+    background: #005194;
+    
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.text:focus {
+   outline: none; 
+}
+.text:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #8eae25;
+}
+
+.text .span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.text:hover  .span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+.span {
+    transform: skewX(15deg) 
+  }
+
+.span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.text:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.text:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+.text:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #8eae25;
+    }
+    100% {
+        fill: white;
+    }
+}
+@media only all and (max-width: 1000px) {
+    #qui{
+        font-size: 150px;
+    }
+    #slogan{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 38px;
+        z-index: 2;
+    }
+    #pf{
+        position: absolute;
+        display: flex;
+        margin-left:294px;
+        margin-top: 60px;
+    }
+    #bande{
+        margin-top: 150px;
+        position: relative;
+        z-index: 2;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 25px;
+        margin-bottom: 10px;
+        
+      }
+
+      .text {
+          display: flex;
+          align-items: center;
+          padding: 2px 25px;
+          text-decoration: none;
+          font-family: 'Poppins', sans-serif;
+          font-size: 30px;
+          color: white;
+          background: #005194;
+
+          box-shadow: 3px 3px 0 black;
+          transform: skewX(-15deg);
+      }
+
+      .text:focus {
+         outline: none; 
+      }
+      .text:hover {
+          transition: 0.5s;
+          box-shadow: 5px 5px 0 #8eae25;
+      }
+
+      .text .span:nth-child(2) {
+          transition: 0.5s;
+          margin-right: 0px;
+      }
+
+      .text:hover  .span:nth-child(2) {
+          transition: 0.5s;
+          margin-right: 45px;
+      }
+      .span {
+          
+          transform: skewX(15deg) ;
+        }
+
+      .span:nth-child(2) {
+          width: 10px;
+          margin-left: 15px;
+          position: relative;
+          top: 12%;
+      }
+      path.one {
+          transition: 0.4s;
+          transform: translateX(-60%);
+      }
+
+      path.two {
+          transition: 0.5s;
+          transform: translateX(-30%);
+      }
+
+      .text:hover path.three {
+          animation: color_anim 1s infinite 0.2s;
+      }
+
+      .text:hover path.one {
+          transform: translateX(0%);
+          animation: color_anim 1s infinite 0.6s;
+      }
+      .text:hover path.two {
+          transform: translateX(0%);
+          animation: color_anim 1s infinite 0.4s;
+      }
+
+      @keyframes color_anim {
+          0% {
+              fill: white;
+          }
+          50% {
+              fill: #8eae25;
+          }
+          100% {
+              fill: white;
+          }
+      }
+    }
